@@ -8,4 +8,9 @@
   <% end %>
 <ul>
 
-<%= link_to "New Url", new_url_path%>
+
+<%# <%= link_to "New Url", new_url_path %>
+
+<h2>New Url</h2>
+
+<%= render "form", url: @url %>

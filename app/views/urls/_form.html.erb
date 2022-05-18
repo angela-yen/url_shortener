@@ -1,0 +1,10 @@
+<%= form_with model: @url do |form| %>
+  <div>
+    <%= form.label :long_url %><br>
+    <%= form.text_field :long_url %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
