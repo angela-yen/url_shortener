@@ -1,0 +1,11 @@
+<h1>Welcome to Ange's URL Shortener 📏</h1>
+
+<ul>
+  <% @urls.each do |url| %>
+    <li>
+     <%= link_to url.short_url, url %>
+    </li>
+  <% end %>
+<ul>
+
+<%= link_to "New Url", new_url_path%>
