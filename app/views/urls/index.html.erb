@@ -1,7 +1,9 @@
-<h1>Welcome to Ange's URL Shortener 📏</h1>
-
+<div class="max-w-lg mx-auto mt-16 text-center max-w-sm rounded overflow-hidden shadow-lg p-10">
+<h1 class="mb-4 text-3xl font-black">Welcome to Ange's URL Shortener 📏</h1>
+</div>
 <h2><%= link_to "New Url", new_url_path %></h2>
 
+<h3>Past Links</h3>
 <ul>
   <% @urls.each do |url| %>
     <li>
@@ -11,9 +13,9 @@
 <ul>
 
 
-
-
 <%# 
-<h2>New Url</h2>
+
+
+<h2>New URL</h2>
 <%= render "form", url: @url %>
 

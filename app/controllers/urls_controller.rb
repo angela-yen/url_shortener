@@ -7,7 +7,6 @@ class UrlsController < ApplicationController
     @url = Url.find(params[:id])
   end 
 
-  # using a form create a new entry into the DB (long_url)
   def new 
     @url = Url.new
   end 

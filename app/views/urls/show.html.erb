@@ -1,3 +1,6 @@
-<h1><%= link_to "Where you want to go 👀", @url.long_url %></h1>
+<h1>This is your shortened link for: <%=@url.long_url%></h1>
+<h1><%= link_to @url.short_url, @url.long_url %></h1>
 
 <%# <p><%= @url.short_url</p> %>
+
+<%# "Where you want to go 👀" %>
