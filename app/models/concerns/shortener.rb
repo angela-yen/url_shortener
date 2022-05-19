@@ -1,12 +1,18 @@
 module Shortener
   extend ActiveSupport::Concern
 
-  # include do 
-  #   validates :long_url, presence: true
-  # end 
+  include do 
+    attr_accessor :short
 
-    def shrink
-      @url.short_url = [*'a'..'z', *0..9, *'A'..'Z'].shuffle[0..5].join
+    def random
+      short = [*'a'..'z', *0..9, *'A'..'Z'].shuffle[0..5].join
     end 
+  end 
+
+  # class_methods do 
+  #   def assign_random
+
+  #   end 
+  # end 
 
 end 

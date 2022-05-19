@@ -1,9 +1,9 @@
 class Url < ApplicationRecord
-  include Shortener
+  # include Shortener
   
   # add a new instance of of the shortner. shortener = Shortener.new, short_url = shortner.shrink 
 
-  validates :url, presence: true
-  # validates :short_url, presence: true, lenght: { maximum: 6 }
+  validates :long_url, presence: true
+  # validates :short_url, presence: true, length: { maximum: 6 }
 
 end

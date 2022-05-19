@@ -13,12 +13,13 @@ class UrlsController < ApplicationController
   end 
 
   def create
-    @url = Url.new(long_url: "...", short_url: "...")
+    @url = Url.new(url_params)
   
     if @url.save 
-      redirect_to root
+      redirect_to @url
+
     else 
-      render :new, status: :unprocessble_entity 
+      render :new, status: :unprocessable_entity
     end
   end
  
@@ -33,7 +34,7 @@ class UrlsController < ApplicationController
 
   private
 
-  def article_params
+  def url_params
     params.require(:url).permit(:long_url)
   end
 
