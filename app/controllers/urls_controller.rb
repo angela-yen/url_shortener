@@ -26,12 +26,6 @@ class UrlsController < ApplicationController
 
   # if params.short_url (the length 6 combination shown on the URL) matches a value of in the URLS.short_url column in the URL table, we want to return the urls.long_url and redirect to that site
 
-
-  # def go
-  #   @url = Url.find(params[:short_url])
-  #   
-  # end 
-
   private
 
   def url_params
