@@ -1,8 +1,7 @@
-<h1>This is your shortened link for: "<%=@url.long_url%>"</h1>
+<h1 class="show">This is your shortened link for: "<%=@url.long_url%>"</h1>
+<br>
 <p> Click to be redirected to the website </p>
-<h1><%= link_to @url.short_url, @url.long_url %></h1>
+<p class='link'><%= link_to @url.short_url, @url.long_url %></p>
 
 
 <%# <p><%= @url.short_url</p> %>
-
-<%# "Where you want to go 👀" %>

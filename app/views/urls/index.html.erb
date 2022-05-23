@@ -1,13 +1,13 @@
 <h1>Welcome to Ange's URL Shortener 📏</h1>
 
-<h2><%= link_to "New Url", new_url_path %></h2>
+<h2 class='form_link'><%= link_to "New Url", new_url_path %></h2>
 
 <%# # <# <h2><%= link_to "New Url", url_new_path %>
 
 <h3>Past Links</h3>
-<ul>
+<ul class='list'>
   <% @urls.each do |url| %>
-    <li>
+    <li style="padding: 10px">
      <%= link_to url.short_url, url %>
     </li>
   <% end %>
