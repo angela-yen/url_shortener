@@ -8,11 +8,7 @@ Rails.application.routes.draw do
   # get '/url/new', to: 'urls#new'
   # post 'url', to: 'urls#create' 
 
-
   
-  # get '/:short_url', to: redirect('/urls/%{long)url}')
-
-  
-  # post '/url', to: 'urls#index'
+  get '/u/:short_url', to: 'urls#redirect'
 
 end

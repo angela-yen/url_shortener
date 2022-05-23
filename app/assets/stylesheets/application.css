@@ -99,3 +99,20 @@ a:active {
   width: 120px;
   padding: 10px;
 }
+
+.btn {
+  color: #c28ae3;
+  font-family: Comfortaa;
+  font-size: 20px;
+  margin: 20px;
+  padding: 10px
+}
+
+.linking {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  background-color: #333333;
+  padding: 15px;
+  width: 500px;
+}

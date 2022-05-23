@@ -1,7 +1,29 @@
-<h1 class="show">This is your shortened link for: "<%=@url.long_url%>"</h1>
-<br>
-<p> Click to be redirected to the website </p>
-<p class='link'><%= link_to @url.short_url, @url.long_url %></p>
+<h1 class="show">This is your shortened link for: "<%=@url.long_url%>"</h1><br>
+  <div class='linking'>
+    
 
+  <%# <p class='link'><%= link_to @url.short_url, @url.long_url %>
+    <p> Here is your shortened URL:</p>
+    <p><%= link_to "http://localhost:3000/u/#{@url.short_url}", @url.long_url %><p>
+    <button class="btn" data-clipboard-text="Just because you can doesn't mean you should — clipboard.js">
+    Copy to clipboard </button>
+    <p> Click to be redirected to the website </p>
+
+  <%# </div> %>
+<%# 
+<div class="home">
+  <%= link_to "home", root_path %>
+<%# </div> %>
+
+
+
+
+<%= link_to image_tag("home.png"), root_path %>
+
+<%# <p>http://localhost:3000/u/<%=@url.short_url %>
 
 <%# <p><%= @url.short_url</p> %>
+
+
+
+<!-- Target -->

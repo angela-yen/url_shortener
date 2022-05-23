@@ -22,13 +22,16 @@ class UrlsController < ApplicationController
     end
   end
  
-
-  # if params.short_url (the length 6 combination shown on the URL) matches a value of in the URLS.short_url column in the URL table, we want to return the urls.long_url and redirect to that site
+  def redirect 
+    @url = Url.find_by(short_url: params[:short_url])
+    redirect_to @url.long_url, allow_other_host: true
+  end 
+  
 
   private
 
   def url_params
-    params.require(:url).permit(:long_url)
+    params.require(:url).permit(:long_url, :short_url)
   end
 
 end
