@@ -104,8 +104,9 @@ a:active {
   color: #c28ae3;
   font-family: Comfortaa;
   font-size: 20px;
-  margin: 20px;
-  padding: 10px
+  margin: 5px;
+  padding: 5px;
+  
 }
 
 .linking {
@@ -115,4 +116,11 @@ a:active {
   background-color: #333333;
   padding: 15px;
   width: 500px;
+}
+
+.small {
+  font-size: 20px;
+  font-style: italic;
+  margin: 1px;
+  color:#c28ae3;
 }

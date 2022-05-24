@@ -27,7 +27,6 @@ class UrlsController < ApplicationController
     redirect_to @url.long_url, allow_other_host: true
   end 
   
-
   private
 
   def url_params
