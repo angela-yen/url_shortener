@@ -1,16 +1,12 @@
 <h1 class="show">This is your shortened link for: "<%=@url.long_url%>"</h1><br>
   <div class='linking'>
-    
     <p> Here is your shortened URL:</p>
     <p><%= link_to "http://localhost:3000/u/#{@url.short_url}", "http://localhost:3000/u/#{@url.short_url}" %><p>
     <button class="btn clipboard-btn" data-clipboard-text= "http://localhost:3000/u/<%=@url.short_url%>">
     Copy to clipboard </button>
     <p class="small"> Click the link to be redirected to the website</p>
-  
     <br>
     <br>
-
     <%= link_to image_tag("home.png"), root_path %>
-
-</div>
+  </div>
 
