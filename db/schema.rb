@@ -11,7 +11,7 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema[7.0].define(version: 2022_05_18_015350) do
-  create_table "urls", force: :cascade do |t|
+  create_table "urls", charset: "utf8mb4", force: :cascade do |t|
     t.string "long_url"
     t.string "short_url"
     t.datetime "created_at", null: false

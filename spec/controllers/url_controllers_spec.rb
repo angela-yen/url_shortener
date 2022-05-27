@@ -50,7 +50,7 @@ RSpec.describe UrlsController do
       post :create, params: { url: url_params }
     }
     it "creates a new entry in the DB" do 
-      expect { do_post }.to change {Url.count}.by 1
+      expect{ do_post }.to change {Url.count}.by 1
     end 
 
     context "when passing a short url param" do
