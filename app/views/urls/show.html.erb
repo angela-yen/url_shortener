@@ -4,9 +4,14 @@
     <p><%= link_to "http://localhost:3000/u/#{@url.short_url}", "http://localhost:3000/u/#{@url.short_url}" %><p>
     <button class="btn clipboard-btn" data-clipboard-text= "http://localhost:3000/u/<%=@url.short_url%>">
     Copy to clipboard </button>
-    <p class="small"> Click the link to be redirected to the website</p>
+    <p class="small"> Click the link to be redirected to the website or scan QR code</p>
+    <br>
+    <br>
+    <center><img src="<%= @png.to_data_url %>" /></center>
     <br>
     <br>
     <%= link_to image_tag("home.png"), root_path %>
   </div>
 
+
+   
