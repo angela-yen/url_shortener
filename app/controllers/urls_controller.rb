@@ -1,3 +1,5 @@
+require 'rqrcode_png'
+
 class UrlsController < ApplicationController
   
   def index
