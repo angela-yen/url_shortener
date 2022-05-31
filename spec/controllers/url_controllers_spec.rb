@@ -32,6 +32,11 @@ RSpec.describe UrlsController do
     #   expect_any_instance_of(Url.new.class).to receive(:find).with(url_id).exactly(:once)
     #   get_show
     # end 
+    
+    # it "creates a QR code based on the long url" do 
+    #   get_show
+    #   expect(response). 
+
   end 
 
   describe "GET #redirect" do
